@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # third-party-apps
     'rest_framework',
-    'blog',
+
+    # local apps
+    'library',
 ]
 
 MIDDLEWARE = [
@@ -85,9 +88,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'victus',
-        'USER': 'victus',
-        'PASSWORD': 'victus',
+        'NAME': 'todo',
+        'USER': 'admin12',
+        'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': 5432,
     }
