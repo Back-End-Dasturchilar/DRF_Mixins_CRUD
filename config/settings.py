@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # local apps
-    'library',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -88,9 +88,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'todo',
-        'USER': 'admin12',
-        'PASSWORD': '123',
+        'NAME': 'victus',
+        'USER': 'victus',
+        'PASSWORD': 'victus',
         'HOST': 'localhost',
         'PORT': 5432,
     }
