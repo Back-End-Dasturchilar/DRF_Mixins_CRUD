@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dvgx2)rwvm=h8&$bcfz1(!8o#h&lvd2!m(1obd451h*a)1hn7v'
+SECRET_KEY = 'django-insecure-3w$zs)mkddgu1419ic#9^u3n5742u2+s@zk#4-$=481i)b%gle'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,11 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # third-party-apps
     'rest_framework',
-
-    # local apps
-    'library',
+    'my_app',
 ]
 
 MIDDLEWARE = [
@@ -88,11 +85,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'todo',
-        'USER': 'admin12',
+        'NAME': 'viewset',
+        'USER': 'admin123',
         'PASSWORD': '123',
         'HOST': 'localhost',
-        'PORT': 5432,
+        'PORT': 5432
     }
 }
 
@@ -132,11 +129,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = 'media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
